@@ -31,24 +31,55 @@ cd DiGAN-pytorch
   - See [installation instructions](https://detectron2.readthedocs.io/tutorials/install.html).
 
 ## Dataset Preparation
-Download the datasets using the following script. Please cite their paper if you use the data. (e.r. horse2zebra)
+- Download the datasets using the following script. Please cite their paper if you use the data. (e.r. horse2zebra)
 Try twice if it fails the first time!
 ```bash
 bash ./datasets/download_dataset.sh horse2zebra
 ```
+- You can also build your datasets followed the structure bellow:
+    .
+    ├── datasets                   
+    |   ├── <dataset_name>         # i.e., horse2zebra
+    |   |   ├── trainA             # Training images from daomain A
+    |   |   ├── trainB             # Training images from daomain B
+    |   |   ├── testA              # Testing images from daomain A
+    |   |   └── testB              # Testing images from daomain B
 
+- Get segmented results(condition) for training images:
+```bash
+python segmented_prepro.py --dataroot ./datasets/horse2zebra 
+```
 ## DiGAN Training/Testing
 - Download a dataset using the previous script (e.g., horse2zebra).
-- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097.
-- To log training progress and test images to W&B dashboard, set the `--use_wandb` flag with train and test script
+ 
 - Train a model:
 ```bash
 python train.py --dataroot ./datasets/horse2zebra --name horse2zebra
 ```
+- To continue training, append `--continue_train --epoch_count xxx` on the command line.
+- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097.
+- To log training progress and test images to W&B dashboard, set the `--use_wandb` flag with train and test script
 - To see more intermediate results, check out `./checkpoints/horse2zebra/web/index.html`.
-- How to continue train? Append `--continue_train --epoch_count xxx` on the command line.
+ 
 - Test the model:
 ```
-sh ./scripts/test_attentiongan.sh
+python test.py --dataroot ./datasets/horse2zebra --name horse2zebra
 ```
 - The test results will be saved to a html file here: `./results/horse2zebra/latest_test/index.html`.
+
+### Apply a pre-trained model
+<!-- - You can download a pretrained model (e.g. horse2zebra) with the following script:
+```bash
+bash ./scripts/download_cyclegan_model.sh horse2zebra
+```
+- The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. Check [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/scripts/download_cyclegan_model.sh#L3) for all the available CycleGAN models.
+- To test the model, you also need to download the  horse2zebra dataset:
+```bash
+bash ./datasets/download_cyclegan_dataset.sh horse2zebra
+```
+
+- Then generate the results using
+```bash
+python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrained --model test --no_dropout
+```
+- The option `--model test` is used for generating results of CycleGAN only for one side. This option will automatically set `--dataset_mode single`, which only loads the images from one set. On the contrary, using `--model cycle_gan` requires loading and generating results in both directions, which is sometimes unnecessary. The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory. -->
