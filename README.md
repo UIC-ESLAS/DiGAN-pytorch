@@ -28,5 +28,6 @@ cd DiGAN-pytorch
   - For pip users, please type the command `pip install -r requirements.txt`.
   - For Conda users, you can create a new Conda environment using `conda env create -f environment.yml`.
 
-- Install [Detectron2] 0.6
+- Install [Detectron2](https://github.com/facebookresearch/detectron2) 0.6
+
 See [installation instructions](https://detectron2.readthedocs.io/tutorials/install.html).
