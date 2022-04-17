@@ -10,7 +10,7 @@ dependencies:
 - pip:
   - dominate==2.4.0
   - torchvision==0.9.0
-  - Pillow==7.1.2
-  - numpy==1.21.5
-  - visdom==0.1.8
+  - Pillow==7.1.0
+  - numpy==1.19.2
+  - visdom==0.1.8.9
   - opencv-python==4.1.0.25
