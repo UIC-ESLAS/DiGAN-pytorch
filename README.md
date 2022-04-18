@@ -41,13 +41,15 @@ bash ./datasets/download_dataset.sh horse2zebra
     .
     ├── datasets 
    
-    |   ├── <dataset_name>         # i.e., horse2zebra
+    |     ├── <dataset_name>         # i.e., horse2zebra
     
-    |   |   ├── trainA             # Training images from daomain A
+    |     |     ├── trainA             # Training images from daomain A
     
-    |   |   ├── trainB             # Training images from daomain B
-    |   |   ├── testA              # Testing images from daomain A
-    |   |   └── testB              # Testing images from daomain B
+    |     |     ├── trainB             # Training images from daomain B
+    
+    |     |     ├── testA              # Testing images from daomain A
+    
+    |     |     └── testB              # Testing images from daomain B
 
 - Get segmented results(condition) for training images:
 ```bash
@@ -71,7 +73,7 @@ python test.py --dataroot ./datasets/horse2zebra --name horse2zebra
 ```
 - The test results will be saved to a html file here: `./results/horse2zebra/latest_test/index.html`.
 
-### Apply a pre-trained model
+## Apply a pre-trained model
 - The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. 
 - To test the model, you also need to download the horse2zebra dataset:
 ```bash
