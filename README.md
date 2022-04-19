@@ -36,21 +36,7 @@ Try twice if it fails the first time!
 ```bash
 bash ./datasets/download_dataset.sh horse2zebra
 ```
-- You can also build your datasets followed the structure bellow:
-
-    .
-    ├── datasets 
-   
-    |     ├── <dataset_name>         # i.e., horse2zebra
-    
-    |     |     ├── trainA             # Training images from daomain A
-    
-    |     |     ├── trainB             # Training images from daomain B
-    
-    |     |     ├── testA              # Testing images from daomain A
-    
-    |     |     └── testB              # Testing images from daomain B
-
+- You can also build your datasets followed the structure in `./datasets/{name}/`
 - Get segmented results(condition) for training images:
 ```bash
 python segmented_prepro.py --dataroot ./datasets/horse2zebra 
