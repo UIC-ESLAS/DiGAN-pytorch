@@ -19,7 +19,7 @@
 
 - Clone this repo:
 ```bash
-git clone https://github.com/Annalina-Luo/DiGAN-pytorch
+git clone https://github.com/UIC-ESLAS/DiGAN-pytorch
 cd DiGAN-pytorch
 ```
 
