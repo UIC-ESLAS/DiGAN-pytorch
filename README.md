@@ -70,3 +70,28 @@ bash ./datasets/download_dataset.sh horse2zebra
 python test.py --dataroot datasets/horse2zebra
 ```
 -The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
+
+## Citation
+If you use this code for your research, please cite our papers.
+@inproceedings{gurrin2021introduction,
+<!--   title={Introduction to the Fourth Annual Lifelog Search Challenge, LSC'21},
+  author={Gurrin, Cathal and J{\'o}nsson, Bj{\"o}rn {\TH}{\'o}r and Sch{\"o}ffmann, Klaus and Dang-Nguyen, Duc-Tien and Loko{\v{c}}, Jakub and Tran, Minh-Triet and H{\"u}rst, Wolfgang and Rossetto, Luca and Healy, Graham},
+  booktitle={Proceedings of the 2021 International Conference on Multimedia Retrieval},
+  pages={690--691},
+  year={2021}
+}
+@inproceedings{fu2021can,
+  title={Can Action be Imitated? Learn to Reconstruct and Transfer Human Dynamics from Videos},
+  author={Fu, Yuqian and Fu, Yanwei and Jiang, Yu-Gang},
+  booktitle={Proceedings of the 2021 International Conference on Multimedia Retrieval},
+  pages={101--109},
+  year={2021}
+} -->
+```
+@inproceedings{luo2022DiGAN,
+  title={DiGAN: Directional Generative Adversarial Network for Object Transfiguration},
+  author={Luo, Zhen and Zhang, Yingfang and Zhong, Peihao and Chen, Jingjing and Chen, Donglong},
+  booktitle={Proceedings of the 2022 International Conference on Multimedia Retrieval},
+  year={2022}
+}
+```
