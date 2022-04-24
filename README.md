@@ -73,8 +73,8 @@ python test.py --dataroot datasets/horse2zebra
 
 ## Citation
 If you use this code for your research, please cite our papers.
-@inproceedings{gurrin2021introduction,
-<!--   title={Introduction to the Fourth Annual Lifelog Search Challenge, LSC'21},
+<!-- @inproceedings{gurrin2021introduction,
+  title={Introduction to the Fourth Annual Lifelog Search Challenge, LSC'21},
   author={Gurrin, Cathal and J{\'o}nsson, Bj{\"o}rn {\TH}{\'o}r and Sch{\"o}ffmann, Klaus and Dang-Nguyen, Duc-Tien and Loko{\v{c}}, Jakub and Tran, Minh-Triet and H{\"u}rst, Wolfgang and Rossetto, Luca and Healy, Graham},
   booktitle={Proceedings of the 2021 International Conference on Multimedia Retrieval},
   pages={690--691},
