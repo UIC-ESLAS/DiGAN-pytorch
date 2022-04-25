@@ -72,7 +72,7 @@ python test.py --dataroot datasets/horse2zebra
 -The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
 
 ## Citation
-If you use this code for your research, please cite our papers.
+If you use this code for your research, please cite our paper.
 <!-- @inproceedings{gurrin2021introduction,
   title={Introduction to the Fourth Annual Lifelog Search Challenge, LSC'21},
   author={Gurrin, Cathal and J{\'o}nsson, Bj{\"o}rn {\TH}{\'o}r and Sch{\"o}ffmann, Klaus and Dang-Nguyen, Duc-Tien and Loko{\v{c}}, Jakub and Tran, Minh-Triet and H{\"u}rst, Wolfgang and Rossetto, Luca and Healy, Graham},
