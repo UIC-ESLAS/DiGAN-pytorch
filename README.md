@@ -89,12 +89,6 @@ If you use this code for your research, please cite our paper.
 } -->
 ```
 @inproceedings{luo2022DiGAN,
-  title={DiGAN: Directional Generative Adversarial Network for Object Transfiguration},
-  author={Luo, Zhen and Zhang, Yingfang and Zhong, Peihao and Chen, Jingjing and Chen, Donglong},
-  booktitle={Proceedings of the 2022 International Conference on Multimedia Retrieval},
-  year={2022}
-}
-@inproceedings{luo2022DiGAN,
 author = {Luo, Zhen and Zhang, Yingfang and Zhong, Peihao and Chen, Jingjing and Chen, Donglong},
 title = {DiGAN: Directional Generative Adversarial Network for Object Transfiguration},
 publisher = {Association for Computing Machinery},
