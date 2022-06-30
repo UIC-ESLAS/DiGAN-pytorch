@@ -94,4 +94,18 @@ If you use this code for your research, please cite our paper.
   booktitle={Proceedings of the 2022 International Conference on Multimedia Retrieval},
   year={2022}
 }
+@inproceedings{luo2022DiGAN,
+author = {Luo, Zhen and Zhang, Yingfang and Zhong, Peihao and Chen, Jingjing and Chen, Donglong},
+title = {DiGAN: Directional Generative Adversarial Network for Object Transfiguration},
+publisher = {Association for Computing Machinery},
+url = {https://doi.org/10.1145/3512527.3531400},
+doi = {10.1145/3512527.3531400},
+pages = {471–479},
+location = {Newark, NJ, USA},
+address = {New York, NY, USA},
+booktitle={Proceedings of the 2022 International Conference on Multimedia Retrieval},
+series = {ICMR '22},
+year = {2022},
+isbn = {9781450392389}
+}
 ```
